@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-1: hsl(0, 78%, 62%);
+  --primary-2: hsl(180, 62%, 55%);
+  --primary-3: hsl(34, 97%, 64%);
+  --primary-4: hsl(212, 86%, 64%);
+  --neutral-1: hsl(234, 12%, 34%);
+  --neutral-2: hsl(0deg 0% 33%);
+  --neutral-3: hsl(0, 0%, 98%);
+  --bg-card: #ffffff;
+  --box-shadow: #dae3f2;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+  background-color: var(--neutral-3);
+  height: 125%;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  margin-top: 1em;
+}
+
+.main-title {
+  display: block;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.subtitle {
+  width: 48%;
+  margin: auto;
+  margin-top: 1em;
+}
+
+.cards {
+  position: relative;
+  max-width: 1200px;
+  height: 550px;
+  margin: 5em auto;
+}
+
+.card {
+  position: absolute;
+  width: 350px;
+  height: 250px;
+  background-color: var(--bg-card);
+  box-shadow: 5px 10px 10px var(--box-shadow);
+  border-radius: .5rem;
+  padding: 0 2em;
+  font-size: .9rem;
+}
+
+.card__text,
+.card__title {
+  text-align: left;
+}
+
+.card__icon {
+  position: absolute;
+  right: 2em;
+  bottom: 2em;
+}
+
+.card--cyan {
+  border-top: 5px solid var(--primary-2);
+}
+
+.card--red {
+  border-top: 5px solid var(--primary-1);
+}
+
+.card--orange {
+  border-top: 5px solid var(--primary-3);
+}
+
+.card--blue {
+  border-top: 5px solid var(--primary-4);
+}
+
+.card--left,
+.card--right {
+  top: 150px;
+}
+
+.card--top,
+.card--bottom {
+  left: 425px;
+}
+
+.card--left {
+  left: 0;
+}
+
+.card--top {
+  top: 0;
+}
+
+.card--right {
+  right: 0;
+}
+
+.card--bottom {
+  bottom: 0;
+}
+
+.text-light {
+  color: var(--neutral-2);
+}
+
+.text-thin {
+  font-weight: 200;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+
+@media only screen and (max-width: 1221px) {
+  .card {
+    position: initial;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2em;
+    min-width: 320px;
+  }
+
+  .card__icon {
+    position: initial;
+    margin-left: 213px;
+    margin-top: 20px;
+  }
+
+  .cards {
+    position: relative;
+    max-width: 1200px;
+    height: initial;
+    margin: 5em auto;
+  }
+
+}
+
+@media only screen and (max-width: 541px) {
+  .main-title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 401px) {
+  .card {
+    max-width: 320px;
+  }
+}
